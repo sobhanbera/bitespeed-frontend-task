@@ -41,6 +41,9 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - **Connect Messages:** Drag from the connector point on one message to another to create a link. (Source -> Target)
 - **Save Flow:** Once your flow is complete, click on the "Save" button to save your flow configuration.
 
+![](.github/src/screen_recording.mp4)
+![](.github/src/screenshot.png)
+
 ### Directory Structure
 
 ```bash
