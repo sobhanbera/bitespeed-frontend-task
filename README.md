@@ -1,4 +1,22 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Overview
+
+**This is a Frontend Task by Bitespeed.**
+
+This project aims to create a simple and extensible Chatbot Flow Builder using React. The builder will allow users to design chatbot flows by connecting multiple messages together to determine their order of execution.
+
+Website is hosted at [bitespeed-frontend-task-sobhanbera.vercel.app](https://bitespeed-frontend-task-sobhanbera.vercel.app)
+
+## Features
+
+- **Message Nodes:** Define individual messages as nodes in the chatbot flow.
+- **Connectors:** Link messages to dictate the sequence in which they appear.
+- **Drag and Drop:** Easily arrange and connect messages using a drag-and-drop interface.
+- **Extensibility:** Designed to easily add new features and functionalities as needed.
+
+## Prerequisites
+
+1. Node.js and npm installed on your machine.
+2. Basic understanding of React.
 
 ## Getting Started
 
@@ -16,21 +34,45 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Add a Message Node:** Drag and drop the Message Node from sidebar, to create a new message node.
+- **Edit Message:** Click on a message node to edit its content.
+- **Connect Messages:** Drag from the connector point on one message to another to create a link. (Source -> Target)
+- **Save Flow:** Once your flow is complete, click on the "Save" button to save your flow configuration.
 
-## Learn More
+### Directory Structure
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+src
+├── app
+│   ├── favicon.ico
+│   ├── globals.css
+│   ├── layout.js
+│   └── page.js
+└── components
+    ├── FlowBuilder.js
+    ├── Header.js
+    ├── NodePanelSidebar.js
+    ├── NodeSelector.js
+    ├── edges
+    │   └── CustomEdge.js
+    ├── editors
+    │   └── TextNodeEditor.js
+    ├── handles
+    │   └── CustomHandle.js
+    └── nodes
+        └── TextMessageNode.js
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Extensibility
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+The project is designed with extensibility in mind. Here are a few ways you can extend the functionality:
 
-## Deploy on Vercel
+- New Node Types: Add different types of nodes (e.g., decision nodes, image node, file node, etc). This can be done by creating a new component in [`components/nodes`](./src/components/nodes/) folder.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Create custom editor: Add custom image editor, file input, etc. This can be done by creating a new component in [`components/editors`](./src/components/editors/) folder.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Refrences
+
+- [React Flow Documentation](https://reactflow.dev/docs)
