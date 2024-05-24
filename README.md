@@ -55,13 +55,13 @@ src
     ├── Header.js
     ├── NodePanelSidebar.js
     ├── NodeSelector.js
-    ├── edges
+    ├── edges                   # Custom edges
     │   └── CustomEdge.js
-    ├── editors
+    ├── editors                 # Custom editors
     │   └── TextNodeEditor.js
-    ├── handles
+    ├── handles                 # Custom handles
     │   └── CustomHandle.js
-    └── nodes
+    └── nodes                   # Custom nodes
         └── TextMessageNode.js
 ```
 
