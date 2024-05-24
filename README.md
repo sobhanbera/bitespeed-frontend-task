@@ -76,3 +76,4 @@ The project is designed with extensibility in mind. Here are a few ways you can 
 ## Refrences
 
 - [React Flow Documentation](https://reactflow.dev/docs)
+- [Notion Page](https://bitespeed.notion.site/BiteSpeed-Frontend-Task-Chatbot-flow-builder-fb0feb3498294929a9b7171bcb4e8a8b)
