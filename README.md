@@ -41,6 +41,11 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - **Connect Messages:** Drag from the connector point on one message to another to create a link. (Source -> Target)
 - **Save Flow:** Once your flow is complete, click on the "Save" button to save your flow configuration.
 
+
+https://github.com/sobhanbera/bitespeed-frontend-task/assets/50291544/00e4b587-2339-4299-b026-f6c4f66121b1
+
+![](.github/src/screenshot.png)
+
 ### Directory Structure
 
 ```bash
